@@ -1,7 +1,4 @@
 ( ͡° ͜ʖ ͡°)
-<<<<<<< HEAD
 
-Discord connection test
-=======
+Discord connection test take 2
 (- _ - )
->>>>>>> ed27a0fe4462060f87a0ea101d39ff9a5cec65d2
