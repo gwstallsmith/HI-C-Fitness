@@ -17,3 +17,29 @@ imghead {
     margin-right: auto;
     width: 50%;
 }
+
+header ul {
+    padding: 20px; margin: 0px;
+    list-style: none;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    background: #e9f5ff;
+}
+  
+header li {
+    margin-right: 40px;
+}
+  
+header a:link {
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:link {color:#ff6f1d;}
+
+a:hover {color:#7f3a11;}
+
+a:visited {color:#569fdb;}
+
+a:active {color: #4e84b0;}
