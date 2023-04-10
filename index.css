@@ -43,3 +43,22 @@ a:hover {color:#7f3a11;}
 a:visited {color:#569fdb;}
 
 a:active {color: #4e84b0;}
+
+nav ul li{
+    position: relative;
+}
+
+nav ul li ul {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+}
+
+nav ul li:hover ul {
+    display: block;
+
+}
+
+nav ul li ul li a:hover {
+    background-color: #4e84b0;
+}
