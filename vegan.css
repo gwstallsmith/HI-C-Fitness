@@ -78,3 +78,21 @@ nav ul li a {
     font-size: 18px;
     padding: 8px 4px;
 }
+
+article {
+    display: flex;
+}
+
+article p {
+    padding: 5px;
+}
+
+div.left{
+    width: 50%;
+    background-color: #e9f5ff;
+}
+  
+div.right{
+    width: 50%;
+    background-color: #fcaa7a;
+}
