@@ -18,18 +18,42 @@ imghead {
     width: 50%;
 }
 
+.logo {
+/*
+    position:fixed;
+
+    background-color: red;
+
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+*/
+    left:0;
+    top:0;
+    width:100px;
+    height:100px;
+}
+
 header ul {
     padding: 20px; margin: 0px;
     list-style: none;
     text-transform: uppercase;
     display: flex;
     justify-content: center;
-    background: #e9f5ff;
+    background: white;
+
+
 }
   
 header li {
-    margin-right: 30px;
-    margin-left: 30px;
+
+    background: #e9f5ff;
+
+    margin-right: auto;
+    margin-left: auto;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
 }
   
 header a:link {
