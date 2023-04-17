@@ -7,8 +7,10 @@ main {
     margin-right: auto;
 }
 
-imghead {
-    text-align: center;
+#logo {
+    float: left;
+    padding: 2px;
+    background-color: #e9f5ff;
 }
 
 .center {
@@ -95,4 +97,18 @@ div.left{
 div.right{
     width: 50%;
     background-color: #fcaa7a;
+}
+
+div.leftNav {
+    width: 10%;
+    float: left;
+}
+
+div.rightNav {
+    width: 90%;
+    float: right;
+}
+
+div.leftNav img {
+    padding: 2px;
 }
