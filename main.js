@@ -17,8 +17,13 @@ class Workout {
     }
 }
 
-
 function main() {
+    let reader = new FileReader();
+    let workouts = [];
+    readFile(workouts.txt, txt, function(line) {
+        console.log(line);
+    });
+    
     let dbCurls = new Workout("Dumbell Curls", "Upper Body", "blah blah", "https://www.youtube.com/watch?v=ykJmrZ5v0Oo&ab_channel=Howcast", "\\assets\\dumbellCurl.jpg")
     dbCurls.printWorkout();
 }
