@@ -1,3 +1,44 @@
+class WorkoutManager {
+    constructor() {
+        this.upperBody_ = [];
+        this.lowerBody_ = [];
+    }
+
+    loadWorkouts(workouts = []) {
+        console.log(this.upperBody_);
+
+        workouts.forEach(function(workout) {
+            switch(workout.getMuscleGroup()){
+                case "Upper Body":
+                    console.log(workout);
+                    console.log(this.upperBody_);
+                    this.upperBody_.push(workout);
+                    break;
+
+                case "Lower Body":
+                    this.lowerBody_.push(workout);
+                    break;
+
+            }
+        });
+
+    }
+
+    printWorkouts(muscleGroup) {
+        if(!muscleGroup) {
+            console.log("Upper Body:\n");
+            this.upperBody_.forEach(function() {
+                printWorkout();
+            });
+            console.log("\nLower Body\n");
+            this.lowerBody_.forEach(function() {
+                printWorkout();
+            });
+        }
+    }
+}
+
+
 class Workout {
     constructor(name, mg, description, ytLink, image) {
         this.name_ = name;
@@ -7,6 +48,7 @@ class Workout {
         this.image_ = image;
     }
 
+    getMuscleGroup() { return this.muscleGroup_; }
 
     printWorkout() {
         console.log("Name: " + this.name_);
@@ -17,13 +59,13 @@ class Workout {
     }
 }
 
-function main() {
-    let reader = new FileReader();
+let workoutManager;
+function initWorkouts() {
     let workouts = [];
-    readFile(workouts.txt, txt, function(line) {
-        console.log(line);
-    });
-    
-    let dbCurls = new Workout("Dumbell Curls", "Upper Body", "blah blah", "https://www.youtube.com/watch?v=ykJmrZ5v0Oo&ab_channel=Howcast", "\\assets\\dumbellCurl.jpg")
-    dbCurls.printWorkout();
+    workouts.push(new Workout("Dumbell Curls", "Upper Body", "blah blah", "https://www.youtube.com/watch?v=ykJmrZ5v0Oo&ab_channel=Howcast", "\\assets\\dumbellCurl.jpg"));
+
+    workoutManager = new WorkoutManager();
+    workoutManager.loadWorkouts(workouts);
+    workoutManager.printWorkouts();
 }
+

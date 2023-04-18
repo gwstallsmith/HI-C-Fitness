@@ -1,5 +1,42 @@
 * { box-sizing: border-box; }
 
+div.woblock {
+    height: 250px;
+    width: 250px;
+
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+
+    text-align: center;
+    background-color: grey;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    justify-content: center;
+
+
+    border: 5px black;
+
+}
+
+div.right {
+    text-align: center;
+    background-color: grey;
+    padding:15px;
+    float:right;
+
+}
+
+div.left {
+    text-align: center;
+    background-color: grey;
+    padding:15px;
+    float:left;
+
+}
+
+
 main {
     background-color: white;
     max-width: 920px;
@@ -87,16 +124,6 @@ article {
 
 article p {
     padding: 5px;
-}
-
-div.left{
-    width: 50%;
-    background-color: #e9f5ff;
-}
-  
-div.right{
-    width: 50%;
-    background-color: #fcaa7a;
 }
 
 div.leftNav {
