@@ -8,11 +8,10 @@ article {
 }
 
 div.woblock {
-    height: 400px;
-    width: 400px;
+    height: 425px;
+    width: 425px;
 
     margin:auto;
-    padding:20px;
 
 }
 
@@ -24,11 +23,27 @@ div.orange{
     background-color: #ff6f1d;
 }
 
-p.expl {
-    text-align:center;
-}
-
 img.woimg {
     height: 150px;
     width: 150px;
+}
+
+p.expl {
+    font-size: 24px;
+    text-align:center;
+    padding: 50px;
+}
+
+p.woblock {
+    font-size: 24px;
+}
+
+p.desc{
+    text-align: center;
+    font-size: 14px;
+    padding: 10px;
+}
+
+a.video {
+    color:white;
 }
