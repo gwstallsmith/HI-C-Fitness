@@ -4,6 +4,12 @@ article {
 
 article p {
     padding: 5px;
+    font-size: 14px;
+}
+article p1 {
+    font-size: 14px;
+    margin: 20px;
+    color:chartreuse;
 }
 
 div.left{
@@ -28,4 +34,33 @@ div.rightNav {
 
 div.leftNav img {
     padding: 2px;
+}
+div.woblock {
+    height: 565px;
+    width: 420px;
+    margin: 30px;
+    padding: 20px;
+
+}
+div.blue {
+    background-color:#569fdb;
+
+}
+div.orange {
+    background-color: #fcaa7a;
+}
+div.bigheader {
+    color:#fcaa7a;
+    margin: 20px;
+}
+article b {
+    font-weight: bolder;
+    color:floralwhite;
+}
+article h1 {
+    font-family: 'Times New Roman', Times, serif;
+}
+img.picturething {
+    height: 10em;
+    width:  15em;
 }
