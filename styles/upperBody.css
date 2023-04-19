@@ -1,29 +1,34 @@
 article {
     display: flex;
     text-align: center;
+    color:white;
 
     margin:15px;
 
 }
 
 div.woblock {
-    height: 250px;
-    width: 250px;
+    height: 300px;
+    width: 300px;
 
     margin:auto;
     padding:20px;
 
 }
 
-div.left{
-    background-color: #e9f5ff;
+div.blue{
+    background-color: #569fdb;
 }
   
-div.right{
-    background-color: #fcaa7a;
-
-
-
-
+div.orange{
+    background-color: #ff6f1d;
 }
 
+p.expl {
+    text-align:center;
+}
+
+img.woimg {
+    height: 150px;
+    width: 150px;
+}
