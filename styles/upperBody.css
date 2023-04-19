@@ -31,7 +31,15 @@ img.woimg {
 p.expl {
     font-size: 24px;
     text-align:center;
+    color:black;
+
     padding: 50px;
+
+    background-color: #e9f5ff;
+
+    border-style:solid;
+    border-color: #ff6f1d;
+    border-radius:20px;
 }
 
 p.woblock {
