@@ -3,35 +3,27 @@ div.woblock {
     width: 250px;
 
     display:grid;
-    grid-template-columns: 1fr 1fr;
+    column-gap:50px;
+    row-gap:50px
 
+}
+
+
+div.left {
     text-align: center;
-    background-color: grey;
-
-    margin-left: auto;
-    margin-right: auto;
-
-    justify-content: center;
-
-
-    border: 5px black;
-
+    background-color: red;
+    padding:20px;
+    display:inline-grid;
+    
 }
 
 div.right {
     text-align: center;
     background-color: grey;
-    padding:15px;
-    float:right;
+    padding:20px;
+    display:inline-grid;
 
 }
 
-div.left {
-    text-align: center;
-    background-color: grey;
-    padding:15px;
-    float:left;
-
-}
 
 
