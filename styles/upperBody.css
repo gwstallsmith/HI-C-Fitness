@@ -1,42 +1,29 @@
+article {
+    display: flex;
+    text-align: center;
+
+    margin:15px;
+
+}
+
 div.woblock {
     height: 250px;
     width: 250px;
 
-    display:grid;
-    column-gap:50px;
-    row-gap:50px
-
-}
-
-
-div.left {
-    text-align: center;
-    background-color: red;
+    margin:auto;
     padding:20px;
-    display:inline-grid;
-    
-}
-
-div.right {
-    text-align: center;
-    background-color: grey;
-    padding:20px;
-    display:inline-grid;
 
 }
 
-/*
 div.left{
-    width: 40%;
-    margin-left: auto;
-    margin-right: auto;
     background-color: #e9f5ff;
 }
   
 div.right{
-    width: 40%;
-    margin-left: auto;
-    margin-right: auto;
     background-color: #fcaa7a;
+
+
+
+
 }
-*/
+
