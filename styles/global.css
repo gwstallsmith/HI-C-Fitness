@@ -186,6 +186,9 @@ p.banner {
     color:white;
     border-radius: 0px;
     border-color: white;
+
+
+    display: block;
 }
 
 p.orange {
@@ -221,3 +224,6 @@ a.redir {
     border-color: white;
 }
 
+img.banner {
+    padding:10px;
+}
