@@ -3,7 +3,7 @@ article {
 }
 
 article p {
-    padding: 5px;
+    padding: .1px;
     font-size: 14px;
 }
 article p1 {
@@ -42,15 +42,22 @@ div.woblock {
     padding: 20px;
 
 }
+div.woblock2 {
+    height: 450px;
+    width: 420px;
+    margin: 30px;
+    padding: 20px;
+
+}
 div.blue {
     background-color:#569fdb;
 
 }
 div.orange {
-    background-color: #fcaa7a;
+    background-color: #ff6f1d;
 }
 div.bigheader {
-    color:#fcaa7a;
+    color:#ff6f1d;
     margin: 20px;
 }
 article b {
@@ -59,8 +66,28 @@ article b {
 }
 article h1 {
     font-family: 'Times New Roman', Times, serif;
+    padding: .1px;
 }
 img.picturething {
     height: 10em;
     width:  15em;
+}
+p.expl {
+    font-size: 24px;
+    text-align:center;
+    color:black;
+
+    padding: 50px;
+
+    background-color: #e9f5ff;
+
+    border-style:solid;
+    border-color: #ff6f1d;
+    border-radius:20px;
+}
+
+img.redir{
+    height: 200px;
+    width: 200px;
+
 }
