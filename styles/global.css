@@ -2,7 +2,18 @@
 
     font-family:sans-serif;
     box-sizing: border-box;
+    
 
+}
+
+body {
+    background-color: #569fdb;
+    background-image: url("/assets/groupFitness.jpg"); 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: center;
 }
 
 main {
@@ -10,7 +21,10 @@ main {
     max-width: 920px;
     margin-left: auto;
     margin-right: auto;
+    
 }
+
+
 
 #logo {
     float: left;
@@ -25,6 +39,7 @@ header ul {
     display: flex;
     justify-content: center;
     background: #e9f5ff;
+    
 }
   
 header li {
@@ -109,3 +124,100 @@ footer {
     border-color: #ff6f1d;
 
   }  
+
+
+  article {
+    display: flex;
+    text-align: center;
+    color:white;
+
+    margin:15px;
+
+}
+
+div.woblock {
+    height: 425px;
+    width: 425px;
+
+    margin:auto;
+
+}
+
+div.blue{
+    background-color: #569fdb;
+}
+  
+div.orange{
+    background-color: #ff6f1d;
+}
+
+img.woimg {
+    height: 150px;
+    width: 150px;
+}
+
+img.redir{
+    height: 200px;
+    width: 200px;
+
+}
+
+p.expl {
+    font-size: 24px;
+    text-align:center;
+    color:black;
+
+    padding: 50px;
+
+    background-color: #e9f5ff;
+
+    border-style:solid;
+    border-color: #ff6f1d;
+    border-radius:20px;
+}
+
+p.banner {
+    font-size:64px;
+    text-align:center;
+    color:black;
+    padding: 50px;
+    background-color: #ff6f1d;
+    border-style:solid;
+    color:white;
+    border-radius: 0px;
+    border-color: white;
+}
+
+p.orange {
+    background-color: #ff6f1d;
+}
+
+p.blue {
+    background-color: #569fdb;
+}
+
+
+p.woblock {
+    font-size: 24px;
+    color:white;
+}
+
+p.desc{
+    text-align: center;
+    font-size: 14px;
+    padding: 10px;
+    color:white;
+}
+
+a.video {
+    color:white;
+}
+
+a.redir {
+    color:white;
+    text-align:center;
+    font-size: 32px;
+    text-decoration: none;
+    border-color: white;
+}
+
