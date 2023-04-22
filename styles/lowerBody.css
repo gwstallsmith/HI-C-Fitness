@@ -73,6 +73,11 @@ img.picturething {
     height: 10em;
     width:  15em;
 }
+img.picturething2 {
+    height: 7em;
+    width: 10em;
+    padding: 10px;
+}
 p.expl {
     font-size: 24px;
     text-align:center;
