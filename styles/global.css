@@ -227,3 +227,8 @@ a.redir {
 img.banner {
     padding:10px;
 }
+
+input[type="text"] {
+    width: 50px;
+    height: 25px;
+}

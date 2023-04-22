@@ -7,7 +7,6 @@
   <title>HI-C Fitness</title>
 
 
-  <script src="main.js"></script>
 
 </head>
 
@@ -38,19 +37,55 @@
         </ul>
       </nav>
     </header>
+<article>
+  <div class="woblock orange" style="font-size: 18px">
+    <h3>BMI:</h3>
+    <label for="weight">Weight in</label>
+    <br><br>
+    <label for="weight">Pounds: </label>
+    <input type="text" id="weight" />
+    <br><br>
+    <label for="feet" style="padding:11px"> Height in </label>
+    <br><br>
+    <label for="feet" style="padding:11px"> Feet: </label>
+    <input type="text" id="feet" />
+    <br>
+    <label for="inches">Inches: </label>
+    <input type="text" id="inches" />
+    <br><br>
+
+    <button type="button" onclick="calcBMI()">
+      Calculate BMI
+    </button>
+
+    <h3>Result: </h3>
+    <b>
+      <p id="BMI"></p>
+    </b>
+    <script>
+      function calcBMI() {
+        let feet = parseInt(document.getElementById("feet").value);
+        let inches = parseInt(document.getElementById("inches").value);
+        let height = Math.pow((feet * 12 + inches), 2);
+
+        let weight = document.getElementById("weight").value;
+
+        let bmi = Math.ceil(703 * (weight / height));
 
 
-      <p class="expl">
-        Ayo Template!
-      </p>
-    
-      <b>
-        <p class="expl">
-          Bold Template!
-        </p>
-      </b>
+        document.getElementById("BMI").innerHTML = bmi;
+      }
+    </script>
+    </div>
 
-      
+    <div class="woblock" style="background-color:#e9f5ff;">
+      <img src="assets/bmi.png" class="redir" style="width:410px; height:410px;">
+    </div>
+  </article>
+
+    <p class="expl">
+      BMI Description
+    </p>
 
     <article>
       <a href="lowerBody.html" class="redir">
