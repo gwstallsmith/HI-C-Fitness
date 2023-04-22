@@ -77,6 +77,7 @@
 
         let bmi = Math.ceil(703 * (weight / height));
 
+        if(!bmi) { bmi = "Please fill out all fields"; }
 
         document.getElementById("BMI").innerHTML = bmi;
       }
