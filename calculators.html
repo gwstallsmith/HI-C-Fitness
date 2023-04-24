@@ -78,9 +78,11 @@
         let bmi = Math.ceil(703 * (weight / height));
 
         if(!bmi) { bmi = "Please fill out all fields"; }
-
+        
         document.getElementById("BMI").innerHTML = bmi;
+        
       }
+      
     </script>
     </div>
 
@@ -88,6 +90,7 @@
       <img src="assets/bmi.png" class="redir" style="width:410px; height:410px;">
     </div>
   </article>
+
 
     <p class="expl">
       BMI Description
@@ -122,7 +125,57 @@
       </a>
 
     </article>
+    <article>
+      <div class="woblock orange" style="font-size: 18px">
+        <h3>BMR Calculator:</h3>
+        <label for="weight">Weight in</label>
+        <br><br>
+        <label for="weightBmr">Pounds: </label>
+        <input type="text" id="weightBmr" />
+        <br><br>
+        <label for="feetBmr" style="padding:11px"> Height in </label>
+        <br><br>
+        <label for="feetBmr" style="padding:8px"> Feet: </label>
+        <input type="text" id="feetBmr"/>
+        <br>
+        <label for="inches">Inches: </label>
+        <input type="text" id="inchesBmr" />
+        <br><br>
+        <label for="ageBmr" style="padding:8px"> Age: </label>
+        <input type="text" id="ageBmr" />
+        <br>
+    
+        <button type="button" onclick="calcBMR()">
+          Calculate BMI
+        </button>
+    
+        <h3>Result: </h3>
+        <b>
+          <p id="BMR"></p>
+        </b>
+        <script>
+          
+          function calcBMR(){
+            //66.47 + (6.24 × weight in pounds) + (12.7 × height in inches) − (6.75 × age in years)
+            //age heightf heightin pounds
+            let age = parseInt(document.getElementById("ageBmr").value);
+            let feet = parseInt(document.getElementById("feetBmr").value);
+            let inches = parseInt(document.getElementById("inchesBmr").value);
+            let height = feet * 12 + inches;
+            let weight = document.getElementById("weightBmr").value;
+            
+            let bmr = Math.ceil(66.47 + (6.24 * weight ) + (12.7 * height) - (6.75 * age));
 
+        
+            document.getElementById("BMR").innerHTML = bmr;
+          }
+        </script>
+        </div>
+    
+        <div class="woblock" style="background-color:#e9f5ff;">
+          <img src="assets/bmi.png" class="redir" style="width:410px; height:410px;">
+        </div>
+      </article>
 
   </main>
   <br>
