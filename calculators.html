@@ -97,7 +97,7 @@
     </p>
 
     <article>
-      <div class="woblock orange" style="font-size: 18px">
+      <div class="woblock orange" style="font-size: 17px">
         <h3>BMR Calculator:</h3>
         <label for="weight">Weight in</label>
         <br><br>
@@ -114,10 +114,10 @@
         <br><br>
         <label for="ageBmr" style="padding:8px"> Age: </label>
         <input type="text" id="ageBmr" />
-        <br>
+        <br><br>
     
         <button type="button" onclick="calcBMR()">
-          Calculate BMI
+          Calculate BMR
         </button>
     
         <h3>Result: </h3>
@@ -136,15 +136,19 @@
             let weight = document.getElementById("weightBmr").value;
             
             let bmr = Math.ceil(66.47 + (6.24 * weight ) + (12.7 * height) - (6.75 * age));
-
-        
+            if(!bmr) {
+              bmr = "Please fill out all fields";
+            } else  {
+              bmr +=  " kcal";
+            }
+ 
             document.getElementById("BMR").innerHTML = bmr;
           }
         </script>
         </div>
     
         <div class="woblock" style="background-color:#e9f5ff;">
-          <img src="assets/bmi.png" class="redir" style="width:410px; height:410px;">
+          <img src="assets/bmr.png" class="redir" style="width:410px; height:410px;">
         </div>
       </article>
 
