@@ -8,7 +8,7 @@
 
 body {
     background-color: #569fdb;
-    background-image: url("/assets/groupFitness.jpg"); 
+    background-image: url("../assets/groupFitness.jpg"); 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
