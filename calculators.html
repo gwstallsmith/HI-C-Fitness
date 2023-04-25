@@ -65,12 +65,12 @@
 <article>
   <div class="woblock orange" style="font-size: 18px">
     <h3>BMI Calculator:</h3>
-    <label for="weight">Weight in</label>
+    <label>Weight in</label>
     <br><br>
     <label for="weight">Pounds: </label>
     <input type="text" id="weight" />
     <br><br>
-    <label for="feet" style="padding:11px"> Height in </label>
+    <label style="padding:11px"> Height in </label>
     <br><br>
     <label for="feet" style="padding:8px"> Feet: </label>
     <input type="text" id="feet" />
@@ -120,16 +120,15 @@
       Basal Metabolic Rate
     </p>
 
-
     <article>
       <div class="woblock blue" style="font-size: 17px">
         <h3>BMR Calculator:</h3>
-        <label for="weight">Weight in</label>
+        <label>Weight in</label>
         <br><br>
         <label for="weightBmr">Pounds: </label>
         <input type="text" id="weightBmr" />
         <br><br>
-        <label for="feetBmr" style="padding:11px"> Height in </label>
+        <label style="padding:11px"> Height in </label>
         <br><br>
         <label for="feetBmr" style="padding:8px"> Feet: </label>
         <input type="text" id="feetBmr"/>
@@ -139,7 +138,16 @@
         <br><br>
         <label for="ageBmr" style="padding:8px"> Age: </label>
         <input type="text" id="ageBmr" />
+        &nbsp;&nbsp;
+
+        <label>Male</label>
+        <input type="checkbox" id="maleBmr">
+        &nbsp;
+        <label>Female</label>
+        <input type="checkbox" id="femaleBmr">
         <br><br>
+
+    
     
         <button type="button" onclick="calcBMR()">
           Calculate BMR
@@ -154,19 +162,38 @@
           function calcBMR(){
             //66.47 + (6.24 × weight in pounds) + (12.7 × height in inches) − (6.75 × age in years)
             //age heightf heightin pounds
+            let male = document.getElementById("maleBmr").checked;
+            let female = document.getElementById("femaleBmr").checked;
             let age = parseInt(document.getElementById("ageBmr").value);
             let feet = parseInt(document.getElementById("feetBmr").value);
             let inches = parseInt(document.getElementById("inchesBmr").value);
             let height = feet * 12 + inches;
             let weight = document.getElementById("weightBmr").value;
             
-            let bmr = Math.ceil(66.47 + (6.24 * weight ) + (12.7 * height) - (6.75 * age));
+            let bmr;
+
+            if(male && !female) {
+              bmr = 66.47 + (6.24 * weight ) + (12.7 * height) - (6.75 * age);
+            }
+
+            if(!male && female) {
+              bmr = 655.1 + (4.35 * weight) + (4.7 * height) - (4.7 * age);
+            }
+
+
+            bmr = Math.ceil(bmr);
+
             if(!bmr) {
               bmr = "Please fill out all fields";
             } else  {
-              bmr +=  " kcal";
+              bmr +=  " kcal / day";
             }
+
  
+            if(male && female) {
+                bmr = "Please select only one sex";
+            }
+
             document.getElementById("BMR").innerHTML = bmr;
           }
         </script>
@@ -182,6 +209,94 @@
       </p>
   
   
+      <p class="banner orange">
+        Ideal Body Weight
+      </p>
+  
+  
+      <article>
+        <div class="woblock orange" style="font-size: 17px">
+          <h3>IBW Calculator:</h3>
+          <label style="padding:11px"> Height in </label>
+          <br><br>
+          <label style="padding:8px"> Feet: </label>
+          <input type="text" id="feetIbw"/>
+          <br>
+          <label>Inches: </label>
+          <input type="text" id="inchesIbw" />
+          <br><br>
+          <label>Male</label>
+          <input type="checkbox" id="maleIbw">
+          &nbsp;
+          <label>Female</label>
+          <input type="checkbox" id="femaleIbw">
+          <br><br>
+
+      
+          <button type="button" onclick="calcIBW()">
+            Calculate IBW
+          </button>
+      
+          <h3>Result: </h3>
+          <b>
+            <p id="IBW"></p>
+          </b>
+          <script>
+            
+            function calcIBW(){
+              //66.47 + (6.24 × weight in pounds) + (12.7 × height in inches) − (6.75 × age in years)
+              //age heightf heightin pounds
+              let ibw;
+              let male = document.getElementById("maleIbw").checked;
+              let female = document.getElementById("femaleIbw").checked;
+              let feet = parseInt(document.getElementById("feetIbw").value);
+              let inches = parseInt(document.getElementById("inchesIbw").value);
+
+              let height = (feet * 12 + inches)
+
+              if(male && !female) {
+                if(height >= 60)
+                  ibw = 106 + (6 * (height % 60));
+
+                if(height < 60)
+                  ibw = 106 - (6 * (60 - height));
+              }
+
+              if(!male && female) {
+                if(height >= 60)
+                  ibw = 100 + (5 * (height % 60));
+                if(height < 60)
+                  ibw = 100 - (5 * (60 - height));
+              }
+
+
+              ibw = Math.ceil(ibw);
+
+              if(!ibw) {
+                ibw = "Please fill out all fields";
+              } else  {
+                ibw +=  " lbs";
+              }
+
+              if(male && female) {
+                ibw = "Please select only one sex";
+              }
+
+              document.getElementById("IBW").innerHTML = ibw;
+            }
+          </script>
+          </div>
+      
+          <div class="woblock" style="background-color:#e9f5ff;">
+            <img src="assets/ibw.jpg" class="redir" style="width:410px; height:410px; padding:10px">
+          </div>
+        </article>
+  
+        <p class="expl">
+          IBW Description
+        </p>
+  
+
 
       <article>
       <a href="extras.html" class="redir">
@@ -214,7 +329,7 @@
         </div>
       </a>
       </article>
-      
+
       <p class="expl" style="font-size:40px">
         <b>Check out our exercise pages!</b>
       </p>
