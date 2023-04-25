@@ -136,8 +136,8 @@ footer {
 }
 
 div.woblock {
-    height: 425px;
-    width: 425px;
+    height: 440px;
+    width: 440px;
 
     margin:auto;
 
@@ -235,3 +235,9 @@ input[type="text"] {
     width: 50px;
     height: 25px;
 }
+
+p.athlete{
+    font-size: 16px;
+    color:white;
+}
+
