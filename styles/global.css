@@ -139,8 +139,9 @@ div.woblock {
     height: 440px;
     width: 440px;
 
+    border-radius: 20px;
     margin:auto;
-
+    box-shadow: 2px 2px 10px black;
 }
 
 div.blue{
@@ -174,6 +175,8 @@ p.expl {
     border-style:solid;
     border-color: #ff6f1d;
     border-radius:20px;
+    box-shadow: 2px 2px 10px black;
+
 }
 
 p.banner {
@@ -187,6 +190,7 @@ p.banner {
     border-radius: 0px;
     border-color: white;
 
+    box-shadow: 2px 2px 10px black;
 
     display: block;
 }
@@ -210,6 +214,7 @@ p.desc{
     font-size: 14px;
     padding: 10px;
     color:white;
+
 }
 
 a.video {
@@ -229,6 +234,8 @@ img.banner {
     margin-left: auto;
     margin-right: auto;
     width:100%;
+    box-shadow: 2px 2px 10px black;
+
 }
 
 input[type="text"] {
