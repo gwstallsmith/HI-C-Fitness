@@ -78,7 +78,7 @@ nav ul li:hover ul {
 }
 
 nav ul li ul li a:hover {
-    background-color: rgb(30,31,34)
+    background-color: rgb(30,31,34);
     padding: 10px;
 }
 
