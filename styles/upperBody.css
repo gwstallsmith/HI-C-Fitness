@@ -37,11 +37,11 @@ img.redir{
 p.expl {
     font-size: 24px;
     text-align:center;
-    color:black;
+    color:white;
 
     padding: 50px;
 
-    background-color: #e9f5ff;
+    background-color: rgb(30,33,34);
 
     border-style:solid;
     border-color: #ff6f1d;
