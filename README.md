@@ -2,7 +2,7 @@
 
 Welcome to the HI-C Fitness website repository! This website provides information about weight lifting, calisthenics, and more. It is a great resource for anybody who needs some fitness inspiration!
 
-![HI-C Fitness Logo](https://gwstallsmith.github.io/HI-C-Fitness/assets/logo.png)
+![HI-C Fitness Logo](https://gwstallsmith.github.io/HI-C-Fitness/assets/hicFitnessLogo.png)
 
 ## About
 
